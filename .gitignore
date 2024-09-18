@@ -1,5 +1,6 @@
 # Godot 4+ specific ignores
 .godot/
+<<<<<<< HEAD
 addons/godot-git-plugin/
 
 # Godot-specific ignores
@@ -14,3 +15,6 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+=======
+/android/
+>>>>>>> 8c986a3 (initial commit)
