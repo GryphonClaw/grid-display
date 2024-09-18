@@ -1,7 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 <<<<<<< HEAD
-addons/godot-git-plugin/
+addons/godot-git-plugin/*
 
 # Godot-specific ignores
 .import/
