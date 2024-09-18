@@ -6,4 +6,6 @@
 
 [node name="Grid Display" type="Node2D" parent="."]
 script = ExtResource("1_qchgr")
-grid_size = Vector2(18, 10)
+grid_size = Vector2(8, 10)
+line_size = Vector2(1, 1)
+border_width = 1.0
