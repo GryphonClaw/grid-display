@@ -1,8 +1,6 @@
 @tool
 class_name GridDisplay
-
 extends Node2D
-
 
 ##The Number of cells, horizontally and vertically, using x/y values respectively
 @export var grid_size := Vector2(2, 5):
@@ -54,9 +52,11 @@ extends Node2D
 		draw_grid = value
 		queue_redraw()
 
+
 func _draw() -> void:
 	if draw_border: _draw_rect()
 	if draw_grid: _draw_grid()
+
 
 func _draw_rect():
 	var rect = Rect2(0, 0, grid_size.x * cell_size.x, grid_size.y * cell_size.y)
@@ -71,6 +71,6 @@ func _draw_grid():
 		draw_line(pos, h_pos, hline_color, line_size.x, false)
 	var vline_count = (grid_size.y)
 	for i in range(1, vline_count):
-		var pos = Vector2(0, i * cell_size.x)
-		var v_pos = Vector2(grid_size.x * cell_size.y, i * cell_size.y)
+		var pos = Vector2(0, i * cell_size.y)
+		var v_pos = Vector2(grid_size.x * cell_size.x, i * cell_size.y)
 		draw_line(pos, v_pos, vline_color, line_size.y, false)
