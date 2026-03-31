@@ -59,6 +59,7 @@ var rect: Rect2
 
 func update_rect():
 	rect = Rect2(0, 0, grid_size.x * cell_size.x, grid_size.y * cell_size.y)
+	item_rect_changed.emit()
 
 
 func _draw() -> void:
